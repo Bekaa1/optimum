@@ -10,7 +10,8 @@
 Бинарлы файлдарды оқу немесе жазу үшін "rb" немесе 
 "wb" режимдерін қолданамыз. Мысалы, сурет файлдарын оқу"""
 
-file =  open("C:/Users/user/PycharmProjects/28-29 ПС файлдармен жұмыс/images/output (4).png", "rb")
+file =  open("C:/Users/user/PycharmProjects/28-29 ПС файлдармен жұмыс/images/output (4).png", "ab")
 content = file.read()
 print(content)
 file.close()
+

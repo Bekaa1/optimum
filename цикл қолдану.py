@@ -1,16 +1,13 @@
 # Файлды оқу үшін ашу
-# file = open('input.txt', 'a')
-# file.close()
-# input_file = open("input.txt", "r")
-#
-# # Файлдағы барлық жолдарды оқу және экранға шығару
-# for line in input_file:
-#     print(line.strip())  # Жолдың соңындағы бос орындарды жоямыз
-# # Файлды жабу
-# input_file.close()
+file = open('input.txt', 'a')
+file.close()
+input_file = open("input.txt", "r")
 
-
-
+# Файлдағы барлық жолдарды оқу және экранға шығару
+for line in input_file:
+    print(line.strip())  # Жолдың соңындағы бос орындарды жоямыз
+# Файлды жабу
+input_file.close()
 
 
 # # Файлды оқу үшін ашу

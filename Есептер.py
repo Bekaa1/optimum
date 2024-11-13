@@ -1,51 +1,37 @@
 #Файлда әр жолда бір сан жазылған. Сізге файлдағы барлық сандардың қосындысын есептеу керек
+#file = open('focus.txt', 'r+')
+# a = file.readlines()
+# print(a)
 #
 # summa = 0
-# for i in file:
+
+# for i in a:
 #     san = int(i)
 #     summa += san
 # print(summa)
-#
-
-
 #Файлдағы сандарды оқып, жұп және тақ сандарды бөлек файлдарға жазыңыз.
-# file_taktar = open('taktar', 'w')
-# file_zhuptar = open('zhuptar', 'w')
-#
-# for i in file:
-#     san = int(i)
-#
-#     if san % 2 == 0:
-#         file_zhuptar.write(str(f"{san}\n"))
-#     else:
-#         file_taktar.write(str(san))
-#
-
-
-#
-# file_zhuptar.close()
-# file_taktar.close()
 
 
 #Файлдан мәтінді оқып, онда қанша сөз бар екенін анықтаңыз. Әрбір жолды оқып, сөздерді санап шығыңыз
+# file = open('focus.txt', 'r+')
+#
+# a = file.read()
+# summa_symbol = 0
+# for i in a:
+#     summa_symbol += 1
+# print(summa_symbol)
+#
+# file.close()
 
-# sozder_somasy = 0
-# for i in file:
-#     soz = i.split(',')
-#     sozder_somasy += len(soz)
-# print(sozder_somasy)
+
 #Файлдан әрбір жолды оқып, егер жол бос болса (ешқандай символ болмаса), оны есептеп, жалпы қанша бос жол бар екенін анықтаңыз
 
+file = open('focus.txt', 'r+')
+result = file.readlines()
 
-# bos_oryn_sany = 0
-# for i in file:
-#     if i.strip() == '':
-#         bos_oryn_sany += 1
-# print(bos_oryn_sany)
+count = 0
+for i in result:
+    if i == '\n':
+        count += 1
 
-
-file = open('focus_online')
-
-
-
-file.close()
+print(count)
